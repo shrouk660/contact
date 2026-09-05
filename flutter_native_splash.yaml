@@ -1,0 +1,6 @@
+flutter_native_splash:
+  color: "#29384D"
+  image: assets/images/Group 6.png
+
+  android: true
+  ios: true

@@ -1,3 +1,5 @@
+import 'package:contact_1/core/resources/routes_manager.dart';
+import 'package:contact_1/ui/homeScreen/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,8 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: {},
+      routes: {
+        RoutesManager.homeRouteName :(context) => HomeScreen(),
 
+      },
+      initialRoute: RoutesManager.homeRouteName,
     );
   }
 }
